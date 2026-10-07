@@ -1,5 +1,5 @@
 import React from 'react';
-import { Volume2, VolumeX } from 'lucide-react';
+import { Volume2, VolumeX, Video, ExternalLink } from 'lucide-react';
 
 interface NavbarProps {
   activeTab: string;
@@ -83,6 +83,17 @@ export const Navbar: React.FC<NavbarProps> = ({
 
         {/* Zone 3: 1-2 Primary Actions */}
         <div className="flex items-center gap-3">
+          <a
+            href="https://ribointeractive.netlify.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden lg:flex items-center gap-1.5 px-3 py-1.5 text-xs font-mono font-bold text-[#FFE500] hover:text-black hover:bg-[#FFE500] border border-[#FFE500]/50 rounded-md transition-all cursor-pointer whitespace-nowrap shadow-[0_0_10px_rgba(255,229,0,0.15)]"
+          >
+            <Video className="w-3.5 h-3.5" />
+            <span>Make your own Ribby Video!</span>
+            <ExternalLink className="w-3 h-3" />
+          </a>
+
           <button
             onClick={toggleAudio}
             title={isAudioPlaying ? 'Mute rebel soundtrack' : 'Play rebel soundtrack'}

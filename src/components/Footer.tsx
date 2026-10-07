@@ -50,6 +50,16 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPortal, setActiveTab }) =>
             </button>
             <span className="text-neutral-700">·</span>
             <a
+              href="https://ribointeractive.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#FFE500] hover:underline flex items-center gap-1 font-bold"
+            >
+              <span>Make your own Ribby Video!</span>
+              <ExternalLink className="w-3 h-3" />
+            </a>
+            <span className="text-neutral-700">·</span>
+            <a
               href="https://www.ribomusic.com"
               target="_blank"
               rel="noopener noreferrer"

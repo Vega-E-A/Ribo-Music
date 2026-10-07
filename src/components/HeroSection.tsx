@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Play, Square, Sparkles, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, Play, Square, Sparkles, CheckCircle2, Video, ExternalLink } from 'lucide-react';
 import ribbyImg from '../assets/images/ribby_female_portrait_1791394045997.jpg';
 
 interface HeroSectionProps {
@@ -80,6 +80,17 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               >
                 Inspect Top 100 Data
               </button>
+
+              <a
+                href="https://ribointeractive.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-3.5 bg-neutral-900 hover:bg-[#FFE500]/10 text-[#FFE500] border border-[#FFE500]/40 hover:border-[#FFE500] text-xs font-mono font-bold uppercase tracking-wider rounded-lg flex items-center gap-2 cursor-pointer transition-all whitespace-nowrap shadow-[0_0_15px_rgba(255,229,0,0.15)]"
+              >
+                <Video className="w-4 h-4 text-[#FFE500]" />
+                <span>Make your own Ribby Video!</span>
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
 
               {/* Synthesizer Preview Button */}
               <button
@@ -164,6 +175,16 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                   <p className="text-xs text-neutral-300 mt-1 line-clamp-2">
                     Ribby escaped the corporate algorithmic system. Now she helps independent artists break free, keep their master rights, and build real connections with real fans.
                   </p>
+                  <a
+                    href="https://ribointeractive.netlify.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-3 w-full py-2 bg-[#FFE500] hover:bg-[#FFF066] text-black font-display font-bold text-xs uppercase tracking-wider rounded flex items-center justify-center gap-1.5 transition-all shadow-[0_0_15px_rgba(255,229,0,0.3)] cursor-pointer"
+                  >
+                    <Video className="w-3.5 h-3.5" />
+                    <span>Make your own Ribby Video!</span>
+                    <ExternalLink className="w-3 h-3" />
+                  </a>
                   <div className="mt-2.5 pt-2 border-t border-neutral-800 flex items-center justify-between text-[11px] font-mono text-neutral-400">
                     <span>OWN THE MUSIC</span>
                     <span className="text-[#FFE500]">KEEP THE RIGHTS</span>

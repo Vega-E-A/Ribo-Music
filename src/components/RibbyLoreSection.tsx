@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { RIBBY_LORE_ITEMS } from '../data/musicData';
-import { Sparkles, Radio, Shield, HeartHandshake, Eye } from 'lucide-react';
+import { Sparkles, Radio, Shield, HeartHandshake, Eye, Video, ExternalLink } from 'lucide-react';
 import ribbyImg from '../assets/images/ribby_female_portrait_1791394045997.jpg';
 
 export const RibbyLoreSection: React.FC = () => {
@@ -174,6 +174,33 @@ export const RibbyLoreSection: React.FC = () => {
                   Direct connection with passionate fans who pay to discover, not consume passively.
                 </p>
               </div>
+            </div>
+
+            {/* Make Your Own Ribby Video Feature Box */}
+            <div className="p-5 rounded-xl bg-gradient-to-r from-neutral-900 via-neutral-950 to-neutral-900 border border-[#FFE500]/50 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-[0_0_25px_rgba(255,229,0,0.1)]">
+              <div className="flex items-center gap-3.5">
+                <div className="p-3 rounded-lg bg-[#FFE500]/10 border border-[#FFE500]/30 text-[#FFE500] shrink-0">
+                  <Video className="w-5 h-5" />
+                </div>
+                <div>
+                  <h4 className="font-display text-base font-bold text-white flex items-center gap-2">
+                    <span>Interactive Ribby Studio</span>
+                    <Sparkles className="w-3.5 h-3.5 text-[#FFE500]" />
+                  </h4>
+                  <p className="text-xs text-neutral-300 mt-0.5">
+                    Generate and customize your own scenes and stories with Ribby the Rebel Rabbit.
+                  </p>
+                </div>
+              </div>
+              <a
+                href="https://ribointeractive.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-5 py-2.5 bg-[#FFE500] hover:bg-[#FFF066] text-black font-display font-bold text-xs uppercase tracking-wider rounded-lg flex items-center gap-2 transition-all cursor-pointer whitespace-nowrap shadow-[0_0_15px_rgba(255,229,0,0.3)] shrink-0"
+              >
+                <span>Make your own Ribby Video!</span>
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
             </div>
 
           </div>
